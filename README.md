@@ -1,0 +1,7 @@
+- [x] Eslint
+- [x] babel
+- [x] Create Api
+- [x] Routing
+- [x] Sequelize connect
+- [x] Create Models
+- [x] Create Controllers

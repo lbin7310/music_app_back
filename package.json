@@ -1,0 +1,34 @@
+{
+	"name": "class-manager-subject-back",
+	"version": "1.0.0",
+	"description": "\"Class Manager Subject\"",
+	"main": "app.js",
+	"scripts": {
+		"start": "nodemon --exec babel-node init.js"
+	},
+	"author": "\"Kibin Kim\"",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/node": "^7.6.3",
+		"@babel/preset-env": "^7.6.3",
+		"body-parser": "^1.19.0",
+		"cookie-parser": "^1.4.4",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"helmet": "^3.21.2",
+		"morgan": "^1.9.1",
+		"mysql2": "^2.0.0",
+		"sequelize": "^5.21.2"
+	},
+	"devDependencies": {
+		"eslint": "^6.6.0",
+		"eslint-config-airbnb-base": "^14.0.0",
+		"eslint-config-prettier": "^6.5.0",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-prettier": "^3.1.1",
+		"nodemon": "^1.19.4",
+		"prettier": "^1.18.2"
+	}
+}
