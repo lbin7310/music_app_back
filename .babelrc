@@ -1,4 +1,3 @@
 {
-  "presets": ["@babel/preset-env"],
-  "plugins": ["transform-node-env-inline"]
+  "presets": ["@babel/preset-env"]
 }

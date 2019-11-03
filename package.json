@@ -24,7 +24,6 @@
 		"mysql": "latest"
 	},
 	"devDependencies": {
-		"babel-plugin-transform-node-env-inline": "^0.4.3",
 		"eslint": "^6.6.0",
 		"eslint-config-airbnb-base": "^14.0.0",
 		"eslint-config-prettier": "^6.5.0",
