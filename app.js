@@ -11,7 +11,7 @@ import albumRouter from "./routers/albumRouter";
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "http://13.125.71.215:1031"],
+  origin: "http://localhost:3000",
   optionsSuccessStatus: 200
 };
 
