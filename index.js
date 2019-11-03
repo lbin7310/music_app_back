@@ -4,7 +4,7 @@ import "./sequelize";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 1031;
+const PORT = 5000;
 
 const handleListening = () =>
   console.log(
