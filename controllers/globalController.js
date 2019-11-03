@@ -1,7 +1,11 @@
 import models from "../sequelize";
 
 export const home = async (req, res) => {
-  await models.Album.findAll().then(result => res.json(result));
+  try {
+    await models.Album.findAll().then(result => res.json(result));
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export const albumDetail = async (req, res) => {
