@@ -2,17 +2,16 @@ import Sequelize from "sequelize";
 import dotenv from "dotenv";
 import AlbumModel from "./models/Album";
 import SongModel from "./models/Song";
-import config from "./config.json";
 
-dotenv.config();
+dotenv.config({ path: "./.env" });
 
 const sequelize = new Sequelize(
-  config.DB_NAME || "",
-  config.DB_USER || "",
-  config.DB_PASSWORD || "",
+  process.env.DB_NAME || "",
+  process.env.DB_USER || "",
+  process.env.DB_PASSWORD || "",
   {
-    host: config.DB_HOST || "",
-    port: config.DB_PORT || "",
+    host: process.env.DB_HOST || "",
+    port: process.env.DB_PORT || "",
     dialect: "mysql",
     pool: {
       max: 10,
