@@ -4,7 +4,7 @@
 	"description": "\"Class Manager Subject\"",
 	"main": "app.js",
 	"scripts": {
-		"start": "nodemon --exec babel-node index.js"
+		"start": "NODE_ENV=production nodemon --exec babel-node index.js"
 	},
 	"author": "\"Kibin Kim\"",
 	"license": "ISC",
@@ -24,6 +24,7 @@
 		"mysql": "latest"
 	},
 	"devDependencies": {
+		"babel-plugin-transform-node-env-inline": "^0.4.3",
 		"eslint": "^6.6.0",
 		"eslint-config-airbnb-base": "^14.0.0",
 		"eslint-config-prettier": "^6.5.0",
