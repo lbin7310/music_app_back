@@ -24,5 +24,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(routes.HOME, globalRouter);
 app.use(routes.ALBUM, albumRouter);
+app.use("/test", (req, res) => res.send("test"));
 
 export default app;
