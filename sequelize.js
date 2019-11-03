@@ -14,7 +14,7 @@ const sequelize = new Sequelize(
     port: process.env.DB_PORT || "",
     dialect: "mysql",
     dialectOptions: {
-      ssl: "Amazon RDS"
+      ssh: "Amazon RDS"
     },
     pool: {
       max: 10,
