@@ -4,13 +4,12 @@
 	"description": "\"Class Manager Subject\"",
 	"main": "app.js",
 	"scripts": {
-		"start": "NODE_ENV=development nodemon --exec babel-node index.js",
-		"build": "NODE_ENV=production nodemon --exec babel-node index.js"
+		"start": "NODE_ENV=production nodemon --exec babel-node index.js",
+		"build": "NODE_ENV=development nodemon --exec babel-node index.js"
 	},
 	"author": "\"Kibin Kim\"",
 	"license": "ISC",
 	"dependencies": {
-		"@babel/cli": "^7.6.4",
 		"@babel/core": "^7.6.4",
 		"@babel/node": "^7.6.3",
 		"@babel/preset-env": "^7.6.3",
@@ -21,9 +20,9 @@
 		"express": "^4.17.1",
 		"helmet": "^3.21.2",
 		"morgan": "^1.9.1",
-		"mysql": "latest",
 		"mysql2": "^2.0.0",
-		"sequelize": "^5.21.2"
+		"sequelize": "^5.21.2",
+		"mysql": "latest"
 	},
 	"devDependencies": {
 		"eslint": "^6.6.0",
