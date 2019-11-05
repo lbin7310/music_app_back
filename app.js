@@ -4,9 +4,7 @@ import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import cors from "cors";
-import routes from "./routes";
-import globalRouter from "./routers/globalRouter";
-import albumRouter from "./routers/albumRouter";
+import router from "./Router";
 
 const app = express();
 
@@ -25,8 +23,6 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(routes.HOME, globalRouter);
-app.use(routes.ALBUM, albumRouter);
-app.use("/test", (req, res) => res.send("test"));
+app.use("/", router);
 
 export default app;
