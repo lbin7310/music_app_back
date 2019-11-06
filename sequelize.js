@@ -1,7 +1,5 @@
 import Sequelize from "sequelize";
 import dotenv from "dotenv";
-import AlbumModel from "./models/Album";
-import SongModel from "./models/Song";
 
 dotenv.config({ path: "./.env" });
 
@@ -29,9 +27,4 @@ sequelize
   })
   .catch(error => console.log(`Not connect : ${error}`));
 
-const Album = AlbumModel(sequelize, Sequelize);
-const Song = SongModel(sequelize, Sequelize);
-
-Album.hasMany(Song, { foreignKey: "albumId" });
-
-export default { Album, Song };
+export default sequelize;

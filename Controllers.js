@@ -1,4 +1,4 @@
-import models from "./sequelize";
+import models from "./models";
 
 export const home = async (req, res) => {
   try {
@@ -10,11 +10,11 @@ export const home = async (req, res) => {
 
 export const albumDetail = async (req, res) => {
   const {
-    params: { id: albumId }
+    params: { id }
   } = req;
   try {
     await models.Album.findAll({
-      where: { albumId },
+      where: { id },
       include: { model: models.Song }
     }).then(result => res.json(result));
   } catch (error) {

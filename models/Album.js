@@ -1,6 +1,6 @@
 export default (sequelize, type) => {
   return sequelize.define("album", {
-    albumId: {
+    id: {
       type: type.INTEGER,
       primaryKey: true,
       autoIncrement: true

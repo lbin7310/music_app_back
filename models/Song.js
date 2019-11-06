@@ -1,4 +1,4 @@
-export default (sequelize, type) => {
+export default (sequelize, type, model) => {
   return sequelize.define("song", {
     id: {
       type: type.INTEGER,
@@ -15,7 +15,8 @@ export default (sequelize, type) => {
     },
     albumId: {
       type: type.INTEGER,
-      allowNull: false
+      allowNull: false,
+      references: { model, key: "id" }
     }
   });
 };
